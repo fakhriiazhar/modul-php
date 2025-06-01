@@ -1,0 +1,77 @@
+#wrapper {
+    width: 600px;
+    margin: auto;
+}
+
+/* Style awal menu dan untuk menghilangkan list style */
+body {
+    background-color: greenyellow;
+}
+
+#menu ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #000;
+}
+
+/* Membuat menu menjadi horizontal */
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background: green;
+}
+
+/* Menyembunyikan submenu */
+#menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+}
+
+/* Style menu utama */
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Style saat hover */
+#menu ul li a:hover {
+    background: #666;
+}
+
+/* Menampilkan submenu saat hover */
+#menu li:hover ul {
+    display: block;
+}
+
+/* Meratakan submenu */
+#menu li:hover li {
+    float: none;
+}
+
+/* Style submenu */
+#menu li ul li a {
+    padding: 10px 20px;
+    color: white;
+}
+
+#menu li ul li a:hover {
+    background: #555;
+}
+
+/* Menampilkan foto di "About Us" */
+#menu li ul li img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

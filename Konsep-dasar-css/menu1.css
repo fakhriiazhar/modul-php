@@ -1,0 +1,74 @@
+#wrapper {
+    width: 600px;
+    margin: auto;
+}
+
+/* Style awal menu dan untuk menghilangkan list style */
+#menu ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Membuat menu menjadi horizontal */
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+/* Untuk menyembunyikan submenu */
+#menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* Menempatkan submenu di bawah menu utama */
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style menu utama sebelum hover */
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    background: #000;
+    white-space: nowrap;
+}
+
+/* Style menu utama saat hover */
+#menu ul li a:hover {
+    background: #666;
+}
+
+/* Menampilkan submenu saat hover pada item menu utama */
+#menu li:hover ul {
+    display: block;
+}
+
+/* Mengembalikan float ke default pada submenu */
+#menu li:hover li {
+    float: none;
+    font-size: 11px;
+}
+
+/* Style submenu sebelum hover */
+#menu li:hover a {
+    background: #3b3b3b;
+}
+
+/* Style submenu saat hover */
+#menu li ul li a {
+    background: #3b3b3b;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+#menu li ul li a:hover {
+    background: #666;
+}

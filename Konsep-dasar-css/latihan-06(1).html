@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Latihan 6</title>
+        <style type="text/css">
+            .floatnone{float:none;}
+            .floatleft{float:left;}
+            .floatright{float:right;}
+            .border{
+                width:650px; 
+                height:366px; 
+                border:2px solid #C33B09; 
+                overflow: hidden; /* Pastikan konten tidak keluar dari border */
+            }
+            .img{
+                box-shadow:0 0 6px #666; 
+                border-radius:5px; 
+                margin-left:5px;
+                margin-right:5px;
+            }
+            img {
+                width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+                height: auto; /* Tinggi menyesuaikan proporsi asli */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="floatnone border">
+            <h3>float None CSS</h3>
+            <img class="floatnone" src="bmw-serie-3-700px.jpg" alt="BMW"/>
+            Konten yang ingin di isi
+        </div>
+        <div class="floatleft border">
+            <h3>float Left CSS</h3>
+            <img class="floatleft" src="bmw-serie-3-700px.jpg" alt="BMW"/>
+            Konten yang ingin di isi
+        </div>
+        <div class="floatright border">
+            <h3>float Right CSS</h3>
+            <img class="floatright" src="bmw-serie-3-700px.jpg" alt="BMW"/>
+            Konten yang ingin di isi
+        </div>
+    </body>
+</html>

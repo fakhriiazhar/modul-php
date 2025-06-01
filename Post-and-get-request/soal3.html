@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Mahasiswa Baru - Universitas X</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+    <form action="pendaftaran.php" method="post">
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama_lengkap" required></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                    <select name="tanggal" required>
+                        <option value="">Tanggal</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select name="bulan" required>
+                        <option value="">Bulan</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <select name="tahun" required>
+                        <option value="">Tahun</option>
+                        <option value="1980">1980</option>
+                        <option value="1981">1981</option>
+                        <option value="2005">2005</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat Rumah</td>
+                <td>:</td>
+                <td><textarea name="alamat" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Pria" required>Pria
+                    <input type="radio" name="jenis_kelamin" value="Wanita" required>Wanita
+                </td>
+            </tr>
+            <tr>
+                <td>Asal Sekolah</td>
+                <td>:</td>
+                <td><input type="text" name="asal_sekolah" required></td>
+            </tr>
+            <tr>
+                <td>Nilai UAN</td>
+                <td>:</td>
+                <td><input type="text" name="nilai_uan" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

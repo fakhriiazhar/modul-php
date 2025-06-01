@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Simulasi Tabungan Bank</title>
+    </head>
+    <body>
+        <h1>Simulasi Saldo Akhir Tabungan</h1>
+        <form method="post" action="proses-tabungan.php">
+            Masukkan Saldo Awal: 
+            <input type="text" name="saldo_awal" value="1000000" /><br />
+            
+            Masukkan Bunga per Bulan (%): 
+            <input type="text" name="bunga" value="0.25" /><br />
+            
+            Masukkan Lama Bulan: 
+            <input type="text" name="lama_bulan" value="11" /><br />
+            
+            <input type="submit" name="submit" value="Hitung Saldo Akhir" />
+            <input type="reset" value="Reset" />
+        </form>
+    </body>
+</html>
